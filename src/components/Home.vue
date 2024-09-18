@@ -3,14 +3,16 @@
     class="min-h-screen bg-gradient-to-r flex flex-col items-center justify-center p-4"
   >
     <div class="text-center mb-8">
-      <h1 class="text-5xl font-bold mb-4 text-black">TypeType Challenge</h1>
+      <h1 class="text-5xl font-extrabold mb-4 text-black">
+        Challenge Your Typing Skills here..
+      </h1>
     </div>
 
-    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-3xl">
+    <div class="bg-white p-4 sm:p-8 rounded-lg shadow-lg w-full max-w-3xl">
       <!-- Challenge Mode Selector -->
       <div class="mb-6">
         <h2 class="text-2xl font-semibold mb-2">Choose Your Challenge:</h2>
-        <div class="flex space-x-4">
+        <div class="flex flex-wrap gap-2">
           <button
             v-for="mode in challengeModes"
             :key="mode"
@@ -30,7 +32,7 @@
       <!-- Completion Message -->
       <div
         v-if="challengeCompleted"
-        class="mb-6 p-6 bg-green-100 rounded-lg text-center"
+        class="mb-6 p-4 sm:p-6 bg-green-100 rounded-lg text-center"
       >
         <h3 class="text-2xl font-bold text-green-700 mb-4">Congratulations!</h3>
         <p class="text-lg text-green-600 mb-4">
@@ -158,23 +160,33 @@ export default {
           "A journey of a thousand miles begins with a single step.",
           "Typing is an essential skill for everyone.",
           "Time flies when you're having fun.",
-          "Success is the result of hard work and determination.",
-          "The rain in Spain stays mainly in the plain.",
-          "He sells sea shells by the sea shore.",
-          "Learning to type efficiently is a valuable skill.",
-          "Rome wasn't built in a day, but they worked on it every single day.",
+          "Every cloud has a silver lining.",
+          "Actions speak louder than words.",
+          "Better late than never.",
+          "Don't judge a book by its cover.",
+          "Easy come, easy go.",
+          "Honesty is the best policy.",
+          "Laughter is the best medicine.",
+          "Where there's a will, there's a way.",
+          "You can't have your cake and eat it too.",
+          "When in Rome, do as the Romans do.",
         ],
         Normal: [
           "To be or not to be, that is the question.",
           "All that glitters is not gold.",
           "The only way to do great work is to love what you do.",
-          "Actions speak louder than words.",
           "A picture is worth a thousand words.",
           "Success usually comes to those who are too busy to be looking for it.",
-          "Good things come to those who wait, but better things come to those who go out and get them.",
           "The greatest glory in living lies not in never falling, but in rising every time we fall.",
           "In the end, it's not the years in your life that count. It's the life in your years.",
           "The future belongs to those who believe in the beauty of their dreams.",
+          "Life is what happens to you while you're busy making other plans.",
+          "Twenty years from now you will be more disappointed by the things that you didn't do than by the ones you did do.",
+          "The two most important days in your life are the day you are born and the day you find out why.",
+          "There is no greater agony than bearing an untold story inside you.",
+          "Everything you've ever wanted is on the other side of fear.",
+          "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+          "Believe you can and you're halfway there.",
         ],
         Hard: [
           "I am the master of my fate, I am the captain of my soul.",
@@ -185,14 +197,23 @@ export default {
           "The only limit to our realization of tomorrow is our doubts of today.",
           "In the middle of difficulty lies opportunity.",
           "The only thing we have to fear is fear itself.",
-          "I wandered lonely as a cloud that floats on high o'er vales and hills, when all at once I saw a crowd, a host of golden daffodils.",
+          "I wandered lonely as a cloud that floats on high o'er vales and hills.",
           "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
+          "Ask not what your country can do for you – ask what you can do for your country.",
+          "We shall defend our island, whatever the cost may be, we shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields and in the streets, we shall fight in the hills; we shall never surrender.",
+          "That's one small step for man, one giant leap for mankind.",
+          "I have a dream that one day this nation will rise up and live out the true meaning of its creed.",
+          "The greatest challenge to any thinker is stating the problem in a way that will allow a solution.",
         ],
-        VeryHard: [
+        "Very Hard": [
           "It was a bright cold day in April, and the clocks were striking thirteen. Winston Smith, his chin nuzzled into his breast in an effort to escape the vile wind, slipped quickly through the glass doors of Victory Mansions, though not quickly enough to prevent a swirl of gritty dust from entering along with him.",
-          "All happy families are alike; each unhappy family is unhappy in its own way. Everything was in confusion in the Oblonskys’ house. The wife had discovered that the husband was carrying on an intrigue with a French girl, who had been a governess in their family, and she declared that she could not go on living in the same house with him.",
-          "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way.",
-          "There was no possibility of taking a walk that day. We had been wandering, indeed, in the leafless shrubbery an hour in the morning; but since dinner (Mrs. Reed, when there was no company, dined early) the cold winter wind had brought with it clouds so sombre, and a rain so penetrating, that further outdoor exercise was now out of the question.",
+          "All happy families are alike; each unhappy family is unhappy in its own way. Everything was in confusion in the Oblonskys' house. The wife had discovered that the husband was carrying on an intrigue with a French girl, who had been a governess in their family, and she declared that she could not go on living in the same house with him.",
+          "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
+          "Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice. At that time Macondo was a village of twenty adobe houses, built on the bank of a river of clear water that ran along a bed of polished stones, which were white and enormous, like prehistoric eggs.",
+          "The sky above the port was the color of television, tuned to a dead channel. It's not like I'm using, Rattle thought. It's like my body's developed this massive drug deficiency. He stared at the stars, remembering: the nights he'd spent with her before they were married, their bodies locked together, pale arms and legs tangled on the dark sheets in the purple glow of the city's mingled lights.",
+          "In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.' He didn't say any more, but we've always been unusually communicative in a reserved way, and I understood that he meant a great deal more than that.",
+          "It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn't know what I was doing in New York. I'm stupid about executions. The idea of being electrocuted makes me sick, and that's all there was to read about in the papers—goggle-eyed headlines staring up at me on every street corner and at the fusty, peanut-smelling mouth of every subway.",
+          "Far out in the uncharted backwaters of the unfashionable end of the western spiral arm of the Galaxy lies a small, unregarded yellow sun. Orbiting this at a distance of roughly ninety-two million miles is an utterly insignificant little blue-green planet whose ape-descended life forms are so amazingly primitive that they still think digital watches are a pretty neat idea.",
         ],
       },
     };
