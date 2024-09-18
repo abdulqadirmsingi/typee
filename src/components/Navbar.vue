@@ -40,10 +40,7 @@
 
       <!-- Mobile Menu -->
       <div v-if="isMenuOpen" class="sm:hidden mt-4 space-y-4">
-        <a href="#" class="block text-gray-600 hover:text-blue-500 transition duration-300">Typing Tests</a>
-        <a href="#" class="block text-gray-600 hover:text-blue-500 transition duration-300">Leaderboard</a>
-        <a href="#" class="block text-gray-600 hover:text-blue-500 transition duration-300">Lessons</a>
-        <a href="#" class="block text-gray-600 hover:text-blue-500 transition duration-300">Contact</a>
+        <a href="https://www.abdulqadirmsingi.com/" target="_blank" class="block text-gray-600 hover:text-blue-500 transition duration-300">Contact</a>
         <button class="w-full bg-gradient-to-r from-blue-500 to-cyan-400 text-white font-semibold px-6 py-2 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
           Start Typing
         </button>
