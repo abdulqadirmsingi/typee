@@ -19,13 +19,13 @@
 
         <!-- Social Media Links -->
         <div class="flex space-x-4">
-          <a href="#" class="hover:text-gray-300 transition duration-300" aria-label="Twitter">
+          <a href="https://x.com/qadirmsingi?s=11" target="_blank" class="hover:text-gray-300 transition duration-300" aria-label="Twitter">
             <i class="pi pi-twitter"></i>
           </a>
-          <a href="#" class="hover:text-gray-300 transition duration-300" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/abdulqadir-msingi-3b1655276/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="hover:text-gray-300 transition duration-300" aria-label="LinkedIn">
             <i class="pi pi-linkedin"></i>
           </a>
-          <a href="#" class="hover:text-gray-300 transition duration-300" aria-label="GitHub">
+          <a href="https://github.com/abdulqadirmsingi" target="_blank" class="hover:text-gray-300 transition duration-300" aria-label="GitHub">
             <i class="pi pi-github"></i>
           </a>
         </div>
